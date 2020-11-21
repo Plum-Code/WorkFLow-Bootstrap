@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Prueba
+        link(rel="stylesheet", href="css/styles.css")
+    body
+        // Navigation
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+            .container
+                a.navbar-brand(href='#') Start Bootstrap
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.active
+                        a.nav-link(href='#')
+                            | Home
+                            span.sr-only (current)
+                        li.nav-item
+                        a.nav-link(href='#') About
+                        li.nav-item
+                        a.nav-link(href='#') Services
+                        li.nav-item
+                        a.nav-link(href='#') Contact
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+            .carousel-inner(role='listbox')
+                // Slide One - Set the background image for this slide in the line below
+                .carousel-item.active(style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')")
+                    .carousel-caption.d-none.d-md-block
+                    h2.display-4 First Slide
+                    p.lead This is a description for the first slide.
+                // Slide Two - Set the background image for this slide in the line below
+                .carousel-item(style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')")
+                    .carousel-caption.d-none.d-md-block
+                    h2.display-4 Second Slide
+                    p.lead This is a description for the second slide.
+                // Slide Three - Set the background image for this slide in the line below
+                .carousel-item(style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')")
+                    .carousel-caption.d-none.d-md-block
+                    h2.display-4 Third Slide
+                    p.lead This is a description for the third slide.
+            a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+        // Page Content
+        section.py-5
+        .container
+            h1.display-4 Full Page Image Slider
+            p.lead
+            | The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from
+            a(href='https://unsplash.com') Unsplash
+            | , taken by 
+            a(href='https://unsplash.com/@joannakosinska') Joanna Kosinska
+            | !
+
+
+        script(src="js/bundle.js")
